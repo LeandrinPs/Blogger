@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
@@ -35,6 +35,8 @@ a:hover {
     top: 0;
     z-index: 100;
     gap: 10px;
+    
+    
 }
 
 .header-inner {
@@ -95,6 +97,7 @@ a:hover {
 
 h2 {
     text-align: center;
+    scroll-margin-top: 100px;
 }
 
 
@@ -118,6 +121,7 @@ main {
     gap: 2rem;
     padding: 0 1rem;
     flex: 1;
+    align-items: flex-start;
 }
 
 .posts {
@@ -134,10 +138,33 @@ main {
 
 .sidebar {
    margin-top: 10px;
+   position: sticky;
+   top: 80px;
+   flex: 1;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    gap: 10px;
+
 }
 
 .sidebar h3 {
     margin-bottom: 0.5rem;
+}
+
+.sidebar ul li a {
+    color: #1154e6;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #6153afb4;
+    text-decoration: underline;
 }
 
 .sticky-top {
